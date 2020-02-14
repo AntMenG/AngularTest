@@ -5,6 +5,8 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [
     BreadcrumbsComponent,
@@ -13,7 +15,8 @@ import { CommonModule } from '@angular/common';
     SidebarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule
   ],
   exports: [
     BreadcrumbsComponent,
